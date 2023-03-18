@@ -22,19 +22,19 @@ pipeline {
         }
         stage('Build Docker Images') {
                     steps {
-                        sh 'docker build -t vishalvarma1/miniproj:latest .'
+                        sh 'docker build -t vishalvarma21/miniproj:latest .'
                     }
                 }
                 stage('Publish Docker Images') {
                     steps {
                         withDockerRegistry([ credentialsId: "dockerid", url: "" ]) {
-                            sh 'docker push vishalvarma1/miniproj:latest'
+                            sh 'docker push vishalvarma21/miniproj:latest'
                         }
                     }
                 }
                 stage('Clean Docker Images') {
                     steps {
-                        sh 'docker rmi -f vishalvarma1/miniproj:latest'
+                        sh 'docker rmi -f vishalvarma21/miniproj:latest'
                     }
                 }
     }
