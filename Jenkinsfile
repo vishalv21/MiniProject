@@ -37,5 +37,15 @@ pipeline {
                         sh 'docker rmi -f vishalvarma21/miniproj:latest'
                     }
                 }
+                stage('Deploy and Run Image'){
+                            steps {
+                                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'playbook.yml', sudoUser: null
+                            }
+                        }
     }
+    post {
+                always {
+                    sh 'docker logout'
+                }
+            }
 }
