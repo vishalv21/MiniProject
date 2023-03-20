@@ -10,7 +10,7 @@ pipeline {
             steps {
                 // Get code from a GitHub repository
                 // Make sure to add your own git url and credentialsId
-				git url: 'https://github.com/Abhinav-Kamath/MiniProject.git',
+				git url: 'https://github.com/vishalv21/calculator1.git',
 				branch: 'main'
 			}
         }
