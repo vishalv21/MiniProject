@@ -13,7 +13,7 @@ public class CalculatorTest {
     @Test
     public void testRoot1()
     {
-        double cal_value=calci.root(25.0);
+        double cal_value=calci.root(25.0);// comment 
         double exp_value=5.0;
         assertEquals(cal_value,exp_value,delta);
 //        assertTrue( true );
