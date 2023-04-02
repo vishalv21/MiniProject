@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CalculatorTest {
-    Calculator calci = new Calculator();
+    Calculator calci = new Calculator();// add comment 
     double delta=1e-15;
     /**
      * Rigorous Test :-)
