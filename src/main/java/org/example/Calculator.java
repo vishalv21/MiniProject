@@ -57,7 +57,7 @@ public class Calculator {
         System.out.println("1. Square root function - √x");
         System.out.println("2. Factorial function - x!");
         System.out.println("3. Natural logarithm (base е) - ln(x)");
-        System.out.println("4. Power function - x^" + "b");
+        System.out.println("4. power function - x^" + "b");
         int loop = sc.nextInt();
 //    	while (1==1) {
         if (loop == 1) {
