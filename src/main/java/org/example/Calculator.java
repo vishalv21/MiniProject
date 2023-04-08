@@ -67,7 +67,7 @@ public class Calculator {
             Double ans = root(n);
             if (ans.isNaN()) {
                 System.out.println("Invalid input, Please Try again");
-                logger.error("Invalid input, Entered input is not of the expected type");
+                logger.error("Invalid input, entered input is not of the expected type");
 
                 return;
             }
